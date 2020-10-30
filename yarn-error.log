@@ -1,0 +1,66 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js development
+
+PATH: 
+  /home/navraj/anaconda3/bin:/home/navraj/.local/bin:/home/navraj/.local/bin:/home/navraj/bin:/home/navraj/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/navraj/.dotnet/tools
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.16.3
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/navraj/Documents/mern-setup/package.json: Unexpected token 
+   in JSON at position 746
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:310:30)
+      at /usr/share/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+  		"name": "mern-setup",
+  		"version": "1.0.0",
+  		"main": "index.js",
+  		"license": "MIT",
+  		"dependencies": {
+  				"@hot-loader/react-dom": "17.0.0",
+  				"express": "4.17.1",
+  				"mongodb": "4.4",
+  				"react": "17.0.1",
+  				"react-dom": "17.0.1",
+  				"react-hot-loader": "4.13.0"
+  		},
+  
+  		"devDependencies": {
+  				"@babel/core": "7.9.0",
+  				"@babel/preset-env": "7.9.0",
+  				"@babel/preset-react": "7.9.4",
+  				"babel-loader": "8.1.0",
+  				"nodemon": "2.0.2",
+  				"webpack": "4.42.1",
+  				"webpack-cli": "3.3.11",
+  				"webpack-dev-middleware": "3.7.2",
+  				"webpack-hot-middleware": "2.25.0",
+  				"webpack-node-externals": "1.7.2"
+  		},
+  		"scripts": {
+  				"development": "nodemon",
+  				"build": "webpack --config webpack.config.client.production.js
+  				&& webpack --mode=production --config
+  				webpack.config.server.js",
+  				"start": "NODE_ENV=production node ./dist/server.generated.js"
+  		}
+  
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
